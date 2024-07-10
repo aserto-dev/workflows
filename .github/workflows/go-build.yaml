@@ -46,7 +46,7 @@ jobs:
           args: --timeout=30m
       -
         name: test setup
-        uses: aserto-dev/action-gotestsum@v3.0.0
+        uses: gertd/action-gotestsum@v3.0.0
         with:
           gotestsum_version: ${{ needs.go-env.outputs.GO_TESTSUM_VERSION }}
       -
