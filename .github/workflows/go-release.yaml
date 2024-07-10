@@ -72,7 +72,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           HOMEBREW_TAP: ${{ secrets.GITHUB_TOKEN }}
-          ASERTO_TAP: ${{ secrets.GITHUB_TOKEN }}
         with:
           distribution: goreleaser
           version: ${{ needs.go-env.outputs.GO_RELEASER_VERSION }}
