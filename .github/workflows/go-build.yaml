@@ -26,7 +26,7 @@ jobs:
           echo "GO_RELEASER_VERSION: ${{ needs.go-env.outputs.GO_RELEASER_VERSION }}"
           echo "GO_LANGCI_LINT_VERSION: ${{ needs.go-env.outputs.GO_LANGCI_LINT_VERSION }}"
           echo "GO_TESTSUM_VERSION: ${{ needs.go-env.outputs.GO_TESTSUM_VERSION }}"
-          echo "GOPRIVATE": ${{ needs.go-env.outputs.GOPRIVATE }}"
+          echo "GOPRIVATE: ${{ needs.go-env.outputs.GOPRIVATE }}"
       -
         name: read configuration
         uses: hashicorp/vault-action@v3
